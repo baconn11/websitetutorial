@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap'); /* Roboto font style for all website font */
+
+
+/* instead of specify the most uses color to all, we root the to make easy to write */
+:root{
+    --main-color : #e84242 ;
+    --black-color: #0e0e0e;
+    --light-color: rgb(126, 124, 124);
+    --orange:#f85f06;
+    --border : 0.1rem solid rgba(209, 194, 194, 0.4);
+    --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, .1);
+ }
+
+*{
+    margin: 0 ;
+    padding : 0;
+    box-sizing : border-box;
+    font-family: 'Roboto', sans-serif;
+    outline : none ;
+    text-decoration: none ;
+    text-transform : capitalize ; 
+    transition : 0.2s ease; /* 2 second a transition effect with a slow start, then fast, then end slowly */
+   }
+
+    /*!For HTML CODES*/
+
+      html {
+        font-size:62.5%; /*Now 1rem = 10px for easy unit conversions and the default font size of the site remains at the expected default of 16px */
+        overflow-x: hidden; /* hidde the overflow x */
+        scroll-padding-top: 5.5rem;
+        scroll-behavior: smooth ; 
+        
+       }
+       html::-webkit-scrollbar { /* the entire scrollbar*/
+
+        width: 0.8rem;
+        background-color: #fff;
+    }
+    
+      html::-webkit-scrollbar-track { /* the track (progress bar) of the scrollbar, where there is a gray bar on top of a white bar*/
+    
+        background-color: transparent;
+        
+    }
+    
+      html::-webkit-scrollbar-thumb { /*the draggable scrolling handle*/
+    
+        border-radius: 3rem;
+        background-color: var(--black-color);
+        
+    }
+    
+      .overflow {
+        overflow-x: hidden;
+        overflow-y: visible;
+      }    
+
+       section{ /* Give All Section Same properties */
+        padding : 3.5rem 9% ;
+       }
+
+       section:nth-child(even){
+        background: #eee;
+       }
+
+       .sub-haeding{
+        text-align: center;
+        color: var(--orange);
+        font-size: 2rem;
+        padding-top:1rem;
+
+       }
+
+       .haeding{
+        text-align: center;
+        color: var(--black-color);
+        font-size: 3rem;
+        padding-bottom:2rem;
+        text-transform: uppercase;
+        
+       }
+
+       .btn{
+        margin-top: 1rem;
+        display :inline-block;
+        padding:1.2rem 3rem;
+        border-radius: 20rem;
+        font-size:1.3rem;
+        color: #fff;
+        background-color: var(--black-color);
+        cursor:pointer;
+       }
+       .btn:hover {
+       background-color: var(--orange);
+       opacity: 0.9;
+       font-size:1.6rem;
+       }
+
+      
+       .container .popup {
+        width: 40rem;
+        background: #fff;
+        border-radius: 0.5rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        text-align: center;
+        padding: 1rem 3rem;
+        color:#333;
+        display: none;
+       }
+       
+       .container .popup img{
+        width: 10rem;
+        margin-top: -5rem;
+        border-radius: 50%;
+        box-shadow: var(--box-shadow);
+       }
+       .container .popup h2{
+        font-size:3.5rem;
+        font-weight: 500;
+        margin: 3rem 0 1rem ;
+        color: var(--orange);
+       }
+
+       .container .popup p{
+        padding: 0 2;
+        font-size: 1.5rem;
+       }
+       .container .popup .btn{
+        width: 100%;
+        padding:1rem 2rem;
+        outline: none;
+        border-radius: 0.4rem;
+       }
+
+       .order form {
+        width: 90rem;
+        border-radius: 0.5rem;
+        box-shadow: var(--box-shadow);
+        border: var(--border);
+        background: #fff;
+        padding: 1.5rem;
+        margin: 0 auto;
+       }
+       .order form .input-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+       }
+       .order form .input-box .inputs{
+        width: 49%;
+       }
+       .order form .input-box .inputs span {
+        display:block;
+        padding: 0.5rem 0 ;
+        font-size: 1.5rem;
+        color: var(--light-color);
+       }
+       .order form .input-box .inputs input,
+       .order form .input-box .inputs textarea {
+
+        background: #eee;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        font-size: 1.6rem;
+        color: var(--black-color);
+        text-transform:none;
+        margin-bottom: 1rem;
+        width: 100%;
+        border-color: var(--orange);
+       }
+       .order form .input-box .inputs:hover input,
+       .order form .input-box .inputs:hover textarea{
+        border-color: var(--orange);
+        color: var(--orange);
+       }
+ 
+
+
+
+
+
+
+       
+       /*! Responsive section Start */
+       @media  (max-width:991px){
+        html{
+            font-size: 55%;
+        }
+        header{
+            padding: 1rem 2rem ;
+
+        }
+        section{
+          padding: 2rem;
+        }
+        
+       }
+
+       @media (max-width:768px){
+        header .Buttons #bars-btn{
+            display: inline-block;
+           }
+        header .navbar{
+            position: absolute;
+            top:100%;
+            left:0;
+            right:0;
+            background: #fff;
+            border-top: 0.1rem solid rgba(0, 0 ,0 ,.2) ;
+            border-bottom: 0.1rem solid rgba(0, 0 ,0 ,.2) ;
+            padding: 1rem;
+            clip-path: polygon(0 0 , 100% 0 , 100% 0 , 0 0);
+        }
+        header .navbar.active{
+            clip-path: polygon(0 0 , 100% 0 , 100% 100% , 0 100%);
+        }
+        header .navbar a{
+            display: block;
+            padding: 1.5rem;
+            margin: 1rem;
+            font-size:2rem;
+            background-color: #eee;
+        }
+        #search-form #search-box{
+            width: 90%;
+            margin: 0 1rem;
+
+        }
+        
+        .home .homecontent .slide .content h3{
+          font-size: 5rem;
+        }
+
+        .order form {
+            width: 50rem;
+           
+           }
+        .order form .input-box {
+            display: absolute;
+            flex-wrap: wrap;
+            justify-content:space-between;
+            
+           }
+
+       }
+       @media  (min-width:991px){
+        html{
+            font-size: 50%;
+        }
+        #search-form{
+          top: 9rem;
+        }
+       
+
+       
+       }
+
+
+       /*! Responsive section End */

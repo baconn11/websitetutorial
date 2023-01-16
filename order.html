@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>order</title>
+    <!--! StyleSheet Link -->
+    <link rel="stylesheet" href="Styles/order.css" />
+  </head>
+  <body>
+    <section class="order" id="order">
+      <h3 class="sub-haeding">Order now</h3>
+      <h1 class="haeding">Get your food with one click</h1>
+
+      <form action="" id="order-form">
+        <div class="input-box">
+          <div class="inputs">
+            <span>Name</span>
+            <input type="text" placeholder="Enter your name" required />
+          </div>
+
+          <div class="inputs">
+            <span>Your number</span>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Enter Your Phone Number"
+              pattern="0\[0-9]d{10}/ "
+              required
+            />
+          </div>
+
+          <div class="inputs">
+            <span>your order</span>
+            <input type="text" placeholder="Enter food name " required />
+          </div>
+
+          <div class="inputs">
+            <span>additional food</span>
+            <input type="text" placeholder="Extra with food" required />
+          </div>
+
+          <div class="inputs">
+            <span>number of order</span>
+            <input
+              type="number"
+              min="0"
+              placeholder="how many order"
+              required
+            />
+          </div>
+
+          <div class="inputs">
+            <span>Date and time</span>
+            <input
+              type="datetime-local"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+
+          <div class="inputs">
+            <span>your address</span>
+            <textarea
+              name=""
+              placeholder="enter your address"
+              id=""
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+          </div>
+
+          <div class="inputs">
+            <span>add extra requests</span>
+            <textarea
+              name=""
+              placeholder="add if you have any another request"
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+        </div>
+
+        <input type="submit" value="order now" class="btn" id="click" />
+      </form>
+    </section>
+
+    <div class="container">
+      <div class="popup" id="popup">
+        <img src="\İmages\tick-orderpage.png" />
+        <h2>Thank You!</h2>
+        <p>your order has been successfully submit. Thanks!</p>
+        <button type="button" class="btn" id="ok">Ok</button>
+      </div>
+    </div>
+
+    <!--! script File Link -->
+    <script src="js/order.js"></script>
+  </body>
+</html>

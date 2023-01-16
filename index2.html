@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lachitarro</title>
+
+    <!--! Font awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!--! StyleSheet Link -->
+    <link rel="stylesheet" href="Styles/styles2.css" />
+    <!--! Swiper Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!--! script File swiper slides Link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!--! Header Part Start -->
+    <header>
+      <img src="\İmages\home-logo-l.jpg" alt="">
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#dishes">Dishes</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#review">Review</a>
+        <a href="#contact">contact</a>
+        <a href="#" id="haeder-order">Order</a>
+      </nav>
+
+      <div class="Buttons">
+        <i class="fas fa-bars" id="bars-btn"></i>
+        <i class="fas fa-search" id="search-btn"></i>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart" id="ordrpagebtn"></a>
+      </div>
+    </header>
+    <!--! Header Part End -->
+    <!--! searchform Part Start -->
+
+    <div id="search-form">
+      <input type="search" name="" id="search-box" placeholder="search..." />
+      <i class="fas fa-times" id="close"></i>
+    </div>
+
+    <!--! searchform Part End -->
+
+    <!--! Body Home Part Start -->
+
+    <section class="home" id="home">
+      <div class="swiper mySwiper homecontent">
+        <div class="swiper-wrapper wrapper">
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span><b>Test Our special Menu</b></span>
+              <h3>Testy Burger</h3>
+              <p>
+                <b>Best Hamburger Patty Recipe Thick or thin, made on the grill or stovetop, this is the best and easiest all-purpose recipe for perfect hamburger patties every time!</b>
+              </p>
+              <a href="#" class="btn">Order Now</a>
+            </div>
+            <div class="image">
+              <img src="\İmages\home-map1.png" alt="Menu" />
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span><b>Test Our special Menu</b></span>
+              <h3>Steak and French Fries on a Gray Plate</h3>
+              <p>
+                <b>Steak could be perfectly cooked in a slow cooker. As you can control the time and temperature precisely and keep it tender. Try this out and you won't regret it!</b>
+              </p>
+              <a href="#" class="btn">Order Now</a>
+            </div>
+            <div class="image">
+              <img src="\İmages\home-map3.jpg" alt="Menu" />
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span><b>Test Our special Menu</b></span>
+              <h3>Chocolate Brownie</h3>
+              <p>
+                <b>grilled on either charcoal or gas grill, but some really lend themselves to that smoky, grilled flavor you get with charcoal grilling.try one of our favorite charcoal grilling</b>
+              </p>
+              <a href="#" class="btn">Order Now</a>
+            </div>
+            <div class="image">
+              <img src="\İmages\home-map4.jpg" alt="Menu" />
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span><b>Test Our special Menu</b></span>
+              <h3>Grilled Margherita Pizza</h3>
+              <p>
+                <b>
+                  The easiest way to make pizza at home is to grill it. Crisp crust, melty cheese and all the basil. This grilled Pizza Margherita is a showstopper!</b>
+              </p>
+              <a href="#" class="btn">Order Now</a>
+            </div>
+            <div class="image">
+              <img src="İmages\home-map2.png" alt="Menu" />
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!--! Body Home Part End -->
+
+    <!--! Body Dishes Part Start -->
+
+    <section class="dishes" id="dishes">
+      <h3 class="sub-haeding">our dishes</h3>
+      <h1 class="haeding">Populer dishes</h1>
+      <div class="box-container" id="dishbox-container">
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="İmages\dish-1.png" alt="" />
+          <h3>Burger Jambon</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <span>$22.00</span>
+          <a href="#" class="btn" id="addtocart">Add to cart</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="İmages\dish-2.png" alt="" />
+          <h3>Nugget</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>$13.99</span>
+          <a href="#" class="btn" id="addtocart"  >Add to cart</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="İmages\dish-3.png" alt="" />
+          <h3>Chicken Fried</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>$14.00</span>
+          <a href="#" class="btn" >Add to cart</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="İmages\dish-4.png" alt="" />
+          <h3>Pizza Meatball</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>$28.99</span>
+          <a href="#" class="btn" >Add to cart</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="İmages\dish-5.png" alt="" />
+          <h3>Burger Double Cheese</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>$19.99</span>
+          <a href="#" class="btn" >Add to cart</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="İmages\dish-6.png" alt="" />
+          <h3>Chicken Fried <br>Leg & Wings </h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>$9.99</span>
+          <a href="#" class="btn" >Add to cart</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="İmages\dish-7.png" alt="" />
+          <h3>Pizza Superme</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>$22.00</span>
+          <a href="#" class="btn" >Add to cart</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="\İmages\dish-9.png" alt="" />
+          <h3>Pizza Pepperoni </h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>$17.00</span>
+          <a href="#" class="btn" >Add to cart</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="İmages\dish-10.png" alt="" />
+          <h3>Burger Black Mis</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>$32.00</span>
+          <a href="#" class="btn"  >Add to cart</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="İmages\dish-11.png" alt="" />
+          <h3>Chicken Wrap Krispy</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>$20</span>
+          <a href="#" class="btn">Add to cart</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="İmages\dish-12.png" alt="" />
+          <h3>Salad Buffalo</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>$12.50</span>
+          <a href="#" class="btn">Add to cart</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="İmages\dish-13.png" alt="" />
+          <h3>Dessert Hand Mixer</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>$9.90</span>
+          <a href="#" class="btn">Add to cart</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="İmages\dish-14.png" alt="" />
+          <h3>Soup Beef</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>$15.90</span>
+          <a href="#" class="btn">Add to cart</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="İmages\dish-15.png" alt="" />
+          <h3>Taco Pieces</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>$20.00</span>
+          <a href="#" class="btn">Add to cart</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="İmages\dish-16.png" alt="" />
+          <h3>Fish Cutlet</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>$17.00</span>
+          <a href="#" class="btn">Add to cart</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="İmages\dish-17.png" alt="" />
+          <h3>Dessert Cake</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>$12.00</span>
+          <a href="#" class="btn">Add to cart</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="İmages\dish-18.png" alt="" />
+          <h3>Fish Fried</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>$27.00</span>
+          <a href="#" class="btn" >Add to cart</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="İmages\dish-19.png" alt="" />
+          <h3>Soup Chicken Noodles</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>$11.00</span>
+          <a href="#" class="btn" >Add to cart</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="İmages\dish-20.png" alt="" />
+          <h3>Chicken Caesar</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>$14.00</span>
+          <a href="#" class="btn">Add to cart</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="İmages\dish-21.png" alt="" />
+          <h3>Spagheti</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>$17.00</span>
+          <a href="#" class="btn">Add to cart</a>
+        </div>
+
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="İmages\dish-22.png" alt="" />
+          <h3>Potatoes</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>$3.00</span>
+          <a href="#" class="btn">Add to cart</a>
+        </div>
+
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="İmages\dish-23.png" alt="" />
+          <h3>Pirashki</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>$9.00</span>
+          <a href="#" class="btn">Add to cart</a>
+        </div>
+
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="İmages\dish-24.png" alt="" />
+          <h3>Pizza Vejeterra</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>$20.00</span>
+          <a href="#" class="btn">Add to cart</a>
+        </div>
+
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="İmages\dish-25.png" alt="" />
+          <h3>Burger</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>$20.00</span>
+          <a href="#" class="btn">Add to cart</a>
+        </div>
+
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="İmages\dish-26.png" alt="" />
+          <h3>Spagheti Cheese</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>$15.00</span>
+          <a href="#" class="btn">Add to cart</a>
+        </div>
+
+        
+
+
+
+      </div>
+    </section>
+
+    <!--! Body Dishes Part End -->
+    <!--! Body About Part start -->
+    <section class="about" id="about">
+      <h3 class="sub-haeding">About us</h3>
+      <h1 class="haeding">Why choose us ?</h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="\İmages\about-img.png" alt="About us" />
+        </div>
+
+        <div class="content">
+          <h3>you can find good tasty foods</h3>
+          <p>
+            The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem
+            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat
+          </p>
+          <div class="icons-container">
+            <div class="icons">
+              <i class="fas fa-shipping-fast" title="for order more then 30$ shipping fee is free"></i>
+              <span>Free delivery</span>
+              <p>for order more then 30$ shipping fee is free</p>
+            </div>
+
+            <div class="icons">
+              <i class="fas fa-dollar-sign"></i>
+              <span>Easy Payment</span>
+            
+              <div class="payment-icon">
+              <i class="fa-brands fa-cc-mastercard" style="font-size:3rem; color:red; padding: 0;" ></i>
+              <i class="fa-brands fa-cc-paypal" style="font-size:3rem; color:#0021db; padding: 0;"></i>
+              <i class="fa-brands fa-cc-visa" style="font-size:3rem; color:#eee; padding: 0;"></i>
+              <i class="fa-brands fa-cc-discover" style="font-size:3rem; color:hsl(38, 97%, 54%); padding: 0;"></i>
+              <i class="fa-regular fa-credit-card" style="font-size:3rem; color:#fff; padding: 0;"></i>
+              <i class="fa-brands fa-google-wallet" style="font-size:3rem; color:rgb(227, 0, 243); padding: 0;"></i>
+              </div>
+              
+            </div>
+
+            <div class="icons">
+              <i class="fas fa-headset"></i>
+              <span> 7/24 service</span>
+              <p>phone:02128796678</p>
+            </div>
+          </div>
+          <h2><b>Opening Hours</b></h2>
+
+          <div class="row-time">
+            <div class="w1-half">
+              <p>Wednesday 10.00 - 24.00</p>
+              <p>Wednesday 10.00 - 24.00</p>
+              <p>Wednesday 10.00 - 24.00</p>
+              <p>Wednesday 10.00 - 24.00</p>
+              <p>Thursday 10:00 - 24:00</p>
+            </div>
+            <div class="w1-half">
+              <p>Friday 10:00 - 19:00</p>
+              <p>Saturday 10:00 - 14:00</p>
+              <p>Sunday Closed</p>
+            </div>
+            <div class="col1-lg-12">
+              <a href="#" class="btn">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--! Body About Part End -->
+    <!--! Body Menu Part start -->
+
+    <section class="menu" id="menu">
+      <h3 class="sub-haeding">Our Menu</h3>
+      <h1 class="haeding">Today's speciality</h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="İmages\menu-12.jpg" alt="menu" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="starts">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>Delicious food</h3>
+            <p>
+              The Pizza Restaurant was founded in blabla by Mr. Italiano in
+              lorem ipsum dolor sit amet.
+            </p>
+            <a href="#" class="btn">Add to cart</a>
+            <span class="price">$16.90</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="İmages\menu-13.jpg" alt="menu" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="starts">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>Delicious food</h3>
+            <p>
+              The Pizza Restaurant was founded in blabla by Mr. Italiano in
+              lorem ipsum dolor sit amet.
+            </p>
+            <a href="#" class="btn">Add to cart</a>
+            <span class="price">$16.90</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="İmages\menu-3.jpg" alt="menu" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="starts">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>Delicious food</h3>
+            <p>
+              The Pizza Restaurant was founded in blabla by Mr. Italiano in
+              lorem ipsum dolor sit amet.
+            </p>
+            <a href="#" class="btn">Add to cart</a>
+            <span class="price">$16.90</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="İmages\menu-4.jpg" alt="menu" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="starts">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>Delicious food</h3>
+            <p>
+              The Pizza Restaurant was founded in blabla by Mr. Italiano in
+              lorem ipsum dolor sit amet.
+            </p>
+            <a href="#" class="btn">Add to cart</a>
+            <span class="price">$16.90</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="İmages\menu-5.jpg" alt="menu" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="starts">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>Delicious food</h3>
+            <p>
+              The Pizza Restaurant was founded in blabla by Mr. Italiano in
+              lorem ipsum dolor sit amet.
+            </p>
+            <a href="#" class="btn">Add to cart</a>
+            <span class="price">$16.90</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="İmages\menu-15.jpg" alt="menu" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="starts">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>Delicious food</h3>
+            <p>
+              The Pizza Restaurant was founded in blabla by Mr. Italiano in
+              lorem ipsum dolor sit amet.
+            </p>
+            <a href="#" class="btn">Add to cart</a>
+            <span class="price">$16.90</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="İmages\menu-17.jpg" alt="menu" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="starts">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>Delicious food</h3>
+            <p>
+              The Pizza Restaurant was founded in blabla by Mr. Italiano in
+              lorem ipsum dolor sit amet.
+            </p>
+            <a href="#" class="btn">Add to cart</a>
+            <span class="price">$16.90</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="İmages\menu-14.jpg" alt="menu" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="starts">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>Delicious food</h3>
+            <p>
+              The Pizza Restaurant was founded in blabla by Mr. Italiano in
+              lorem ipsum dolor sit amet.
+            </p>
+            <a href="#" class="btn">Add to cart</a>
+            <span class="price">$16.90</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="İmages\menu-18.jpg" alt="menu" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="starts">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>Delicious food</h3>
+            <p>
+              The Pizza Restaurant was founded in blabla by Mr. Italiano in
+              lorem ipsum dolor sit amet.
+            </p>
+            <a href="#" class="btn">Add to cart</a>
+            <span class="price">$16.90</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="İmages\menu-20.jpg" alt="menu" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="starts">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>Delicious food</h3>
+            <p>
+              The Pizza Restaurant was founded in blabla by Mr. Italiano in
+              lorem ipsum dolor sit amet.
+            </p>
+            <a href="#" class="btn">Add to cart</a>
+            <span class="price">$16.90</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="İmages\menu-19.jpg" alt="menu" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="starts">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>Delicious food</h3>
+            <p>
+              The Pizza Restaurant was founded in blabla by Mr. Italiano in
+              lorem ipsum dolor sit amet.
+            </p>
+            <a href="#" class="btn">Add to cart</a>
+            <span class="price">$16.90</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="İmages\menu-21.jpg" alt="menu" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="starts">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>Delicious food</h3>
+            <p>
+              The Pizza Restaurant was founded in blabla by Mr. Italiano in
+              lorem ipsum dolor sit amet.
+            </p>
+            <a href="#" class="btn">Add to cart</a>
+            <span class="price">$16.90</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="İmages\menu-22.jpg" alt="menu" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="starts">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>Delicious food</h3>
+            <p>
+              The Pizza Restaurant was founded in blabla by Mr. Italiano in
+              lorem ipsum dolor sit amet.
+            </p>
+            <a href="#" class="btn">Add to cart</a>
+            <span class="price">$16.90</span>
+          </div>
+        </div>
+     
+        <div class="box">
+          <div class="image">
+            <img src="İmages\menu-16.jpg" alt="menu" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="starts">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>Delicious food</h3>
+            <p>
+              The Pizza Restaurant was founded in blabla by Mr. Italiano in
+              lorem ipsum dolor sit amet.
+            </p>
+            <a href="#" class="btn">Add to cart</a>
+            <span class="price">$16.90</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="İmages\menu-23.png" alt="menu" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="starts">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>Delicious food</h3>
+            <p>
+              The Pizza Restaurant was founded in blabla by Mr. Italiano in
+              lorem ipsum dolor sit amet.
+            </p>
+            <a href="#" class="btn">Add to cart</a>
+            <span class="price">$16.90</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="İmages\menu-24.jpg" alt="menu" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="starts">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>Delicious food</h3>
+            <p>
+              The Pizza Restaurant was founded in blabla by Mr. Italiano in
+              lorem ipsum dolor sit amet.
+            </p>
+            <a href="#" class="btn">Add to cart</a>
+            <span class="price">$16.90</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="İmages\menu-25.jpg" alt="menu" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="starts">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>Delicious food</h3>
+            <p>
+              The Pizza Restaurant was founded in blabla by Mr. Italiano in
+              lorem ipsum dolor sit amet.
+            </p>
+            <a href="#" class="btn">Add to cart</a>
+            <span class="price">$16.90</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="İmages\menu-26.jpg" alt="menu" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="starts">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>Delicious food</h3>
+            <p>
+              The Pizza Restaurant was founded in blabla by Mr. Italiano in
+              lorem ipsum dolor sit amet.
+            </p>
+            <a href="#" class="btn">Add to cart</a>
+            <span class="price">$16.90</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="İmages\menu-27.jpg" alt="menu" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="starts">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>Delicious food</h3>
+            <p>
+              The Pizza Restaurant was founded in blabla by Mr. Italiano in
+              lorem ipsum dolor sit amet.
+            </p>
+            <a href="#" class="btn">Add to cart</a>
+            <span class="price">$16.90</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="İmages\menu-28.jpg" alt="menu" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="starts">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>Delicious food</h3>
+            <p>
+              The Pizza Restaurant was founded in blabla by Mr. Italiano in
+              lorem ipsum dolor sit amet.
+            </p>
+            <a href="#" class="btn">Add to cart</a>
+            <span class="price">$20.90</span>
+          </div>
+        </div>
+
+        
+
+
+      </div>
+    </section>
+
+    <!--! Body Menu Part End -->
+
+    <!--! Body Review Part Start -->
+    <section class="review" id="review">
+      <h3 class="sub-haeding">customer's Review</h3>
+
+      <div class="swiper-container review-slider">
+        <div class="swiper-wrapper wrapper">
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+
+            <div class="user">
+              <img src="\İmages\av-1.jpeg" alt="user review" />
+              <div class="user-info">
+                <h3>Jessy veso</h3>
+                <div class="starts">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua.consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna
+              aliquaconsectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua.
+            </p>
+          </div>
+
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+
+            <div class="user">
+              <img src="\İmages\av-2.jpeg" alt="user review" />
+              <div class="user-info">
+                <h3>selena foe</h3>
+                <div class="starts">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua.consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua.consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna
+              aliquaconsectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua.
+            </p>
+          </div>
+
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+
+            <div class="user">
+              <img src="\İmages\av-3.jpeg" alt="user review" />
+              <div class="user-info">
+                <h3>doccy deo</h3>
+                <div class="starts">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua.
+            </p>
+          </div>
+
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+
+            <div class="user">
+              <img src="\İmages\av-4.jpeg" alt="user review" />
+              <div class="user-info">
+                <h3>daryy doe</h3>
+                <div class="starts">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>consectetur adipiscing elit, sed do eiusmod tempor</p>
+          </div>
+
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+
+            <div class="user">
+              <img src="\İmages\av-5.jpeg" alt="user review" />
+              <div class="user-info">
+                <h3>harry stoe</h3>
+                <div class="starts">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>consectetur adipiscing elit, sed do eiusmod tempor</p>
+          </div>
+          
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+
+            <div class="user">
+              <img src="\İmages\av-6.jpeg" alt="user review" />
+              <div class="user-info">
+                <h3>harry stoe</h3>
+                <div class="starts">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>consectetur adipiscing elit, sed do eiusmod tempor</p>
+          </div>
+
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+
+            <div class="user">
+              <img src="\İmages\av-7.jpeg" alt="user review" />
+              <div class="user-info">
+                <h3>harry stoe</h3>
+                <div class="starts">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>consectetur adipiscing elit, sed do eiusmod tempor</p>
+          </div>
+
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+
+            <div class="user">
+              <img src="\İmages\av-8.png" alt="user review" />
+              <div class="user-info">
+                <h3>Naz jeso</h3>
+                <div class="starts">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>consectetur adipiscing elit, sed do eiusmod tempor</p>
+          </div>
+          
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+
+            <div class="user">
+              <img src="\İmages\av-9.jpeg" alt="user review" />
+              <div class="user-info">
+                <h3>puupy pu</h3>
+                <div class="starts">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>consectetur adipiscing elit, sed do eiusmod tempor</p>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!--! Body Review Part End -->
+    <!--! Contact section Start-->
+
+    <section class="contact" id="contact">
+      <h3 class="sub-haeding">Contact Us</h3>
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12034.251724312908!2d28.987793798624004!3d41.05668614833371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab6fd319a312d%3A0xd591847d129dc65b!2sVanel%20Cafe%20%26%20Restaurant!5e0!3m2!1str!2str!4v1671967829289!5m2!1str!2str"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+
+        <form>
+          <h3>contact with us</h3>
+          <div class="inputForm">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Enter Your Name" />
+          </div>
+
+          <div class="inputForm">
+            <i class="fas fa-envelope"></i>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter Your Mail Address"
+              pattern=".+@[A-Za-z]\.[A-Za-z]"
+              size="30"
+              required
+            />
+          </div>
+
+          <div class="inputForm">
+            <i class="fas fa-phone"></i>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Enter Your Phone Number"
+              pattern="0-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            />
+          </div>
+          <input type="submit" class="btn" value="contact us" />
+        </form>
+      </div>
+    </section>
+
+    <!--! Contact section End-->
+     <!--! footer section Start-->
+   <section class="footer">
+    <div class="search">
+      <input type="text" class="search-input" placeholder="Search"></input>
+      <button class="btn">Search</button>
+    </div>
+    <div class="share">
+      <a href="#" class="fab fa-facebook" ></a>
+      <a href="#" class="fab fa-google" ></a>
+      <a href="#" class="fab fa-twitter" ></a>
+      <a href="#" class="fab fa-youtube" ></a>
+      <a href="#" class="fab fa-linkedin" ></a>
+      <a href="#" class="fab fa-instagram"  ></a>
+    </div>
+    <div class="credit">
+      created by <span>R.A</span> | All Rights Reserved
+    </div>
+    
+   </section>
+
+
+   <!--! footer section End-->
+
+    <!--! script File Link -->
+    <script src="js/script2.js"></script>
+  </body>
+</html>
